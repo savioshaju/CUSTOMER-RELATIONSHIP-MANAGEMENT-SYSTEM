@@ -1,3 +1,5 @@
+import mongoose, { Schema, model } from "mongoose";
+
 const caseSchema = new Schema({
   customer_id: { type: Schema.Types.ObjectId, ref: "Customer", required: true },
   assigned_to: { type: Schema.Types.ObjectId, ref: "User", required: true },
